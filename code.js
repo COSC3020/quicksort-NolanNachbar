@@ -6,7 +6,7 @@ function quicksort(array) {
         if (lo >= hi) continue;
         let p = lo;
         
-        for (let i = lo; i <= hi; i++) {
+        for (let i = lo + 1; i <= hi; i++) {
             if (array[i] < array[lo]) swap(array, ++p, i);
         }
         
