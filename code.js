@@ -8,7 +8,7 @@ function quicksort(array) {
         if (lo >= hi) continue;
         p = lo;
 
-        for (i = lo + 1; i <= hi; i++) {
+        for (i = lo; i <= hi; i++) {
             if (array[i] < array[lo]) swap(array, ++p, i);
         }
         
